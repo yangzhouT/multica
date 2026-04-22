@@ -38,8 +38,8 @@ export function buildAnchorMarkdown(anchor: ContextAnchor): string {
  * is somewhere without a natural focus object. Subscribes via react-query so
  * the result updates the instant the relevant cache fills.
  *
- * `wsId` is passed in (per CLAUDE.md convention) so this hook works outside
- * a WorkspaceIdProvider if ever reused elsewhere.
+ * `wsId` is passed in explicitly so this hook works outside a
+ * WorkspaceIdProvider if ever reused elsewhere.
  */
 export function useRouteAnchorCandidate(wsId: string): {
   candidate: ContextAnchor | null;

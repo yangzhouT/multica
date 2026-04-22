@@ -8,8 +8,8 @@ import (
 )
 
 // BuildPrompt constructs the task prompt for an agent CLI.
-// Keep this minimal — detailed instructions live in CLAUDE.md / AGENTS.md
-// injected by execenv.InjectRuntimeConfig.
+// Keep this minimal — detailed execution guidance is injected separately
+// by execenv.InjectRuntimeConfig.
 func BuildPrompt(task Task) string {
 	if task.ChatSessionID != "" {
 		return buildChatPrompt(task)

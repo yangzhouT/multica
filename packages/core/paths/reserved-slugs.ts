@@ -4,7 +4,7 @@
  *
  * Keep in sync with server/internal/handler/workspace_reserved_slugs.go.
  *
- * Convention for new global routes (CLAUDE.md): use a single word
+ * Convention for new global routes: use a single word
  * (`/login`, `/inbox`) or `/{noun}/{verb}` (`/workspaces/new`). Hyphenated
  * root-level word groups (`/new-workspace`, `/create-team`) collide with
  * common user workspace names — see PR for full discussion.
